@@ -1,0 +1,279 @@
+:root{
+    --main-color:#007aff;
+}
+a.nav-link{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+}
+
+.element ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -2px;
+    left: 3px;
+    background-color: #fcfdff;
+    transition: all 0.3s ease-in-out 0s;
+    transform: scaley(0);
+}
+.element ul li a:hover::after{
+    width: 80%;
+    transform: scaleX(1); 
+}
+#Home{
+    background-image: url("./imgs/hero-bg.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+#Home p::after{
+    content: "|";
+    animation-name: typ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes typ{
+    0%{content: "D|"}
+    3%{content: "De|"}
+    6%{content: "Des|"}
+    9%{content: "Desi|"}
+    12%{content: "Desig|"}
+    15%{content: "Design|"}
+    18%{content: "Designe|"}
+    21%{content: "Designer|"}
+    24%{content: "Designe|"}
+    27%{content: "Design|"}
+    30%{content: "Desig|"}
+    33%{content: "Desi|"}
+    36%{content: "Des|"}
+    39%{content: "De|"}
+    42%{content: "D|"}
+    45%{content: "P|"}
+    48%{content: "Ph|"}
+    51%{content: "pho|"}
+    54%{content: "phot|"}
+    57%{content: "Photo|"}
+    60%{content: "Photog|"}
+    63%{content: "Photogr|"}
+    66%{content: "Photogra|"}
+    69%{content: "Photograp|"}
+    72%{content: "Photograph|"}
+    75%{content: "Photographe|"}
+    78%{content: "Photographer|"}
+    81%{content: "Photographe|"}
+    84%{content: "Photograph|"}
+    87%{content: "Photograp|"}
+    90%{content: "Photogra|"}
+    93%{content: "Photogr|"}
+    96%{content: "Photog|"}
+    99%{content: "Photo|"}
+    100%{content: "Phot|"}
+    0%{content: "Ph|"}
+    0%{content: "P|"}
+}
+header{
+    background-color: rgba(0,0, 0,0.5);
+}
+header h2{
+    font-size: 5vw;
+    font-weight: bold;
+}
+.services-header p::after{
+    content: "";
+    width: 5%;
+    height: 5px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.descr{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+#about{
+    background-color: #F5F5F5;
+}
+.list span{
+    color: rgb(0, 0, 0);
+    font-size: 17.6px;
+    font-weight: 600;
+}
+.ring .progress {
+    background-color: #cde1f8;
+    margin: 0.5rem 0 1.2rem 0;
+    border-radius: 0;
+    height: 0.7rem;
+}
+.progress-bar{
+    width: 85%;
+}
+.about-info{
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 1px 0px, rgba(0, 0, 0, 0.2) 0px 2px 5px 0px;
+}
+.info p{
+    font-size: 20px;
+    color: RGB(78, 78, 78);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.info h2{
+    position: relative;
+}
+.info h2::after{
+    content: "";
+    width: 20%;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -15px;
+    left: 10%;
+    transform: translateX(-50%);
+}
+
+#SERVICES{
+    background-color: #F5F5F5;
+}
+ #SERVICES .icon {
+    width: 5rem;
+    height: 5rem;
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 7px solid var(--main-color); 
+} 
+#SERVICES .item{
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 1px 0px, rgba(0, 0, 0, 0.2) 0px 2px 5px 0px;
+}
+#SERVICES .item:hover .icon{
+    background-color: var(--main-color);
+    border: 7px solid #CDE1F8;
+    color:white;
+}
+#work{
+    background-image: url("./imgs/counters-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* height: 60vh; */
+}
+.design{
+    background-color:rgba(20, 20, 238, 0.7);
+    /* width: 100%;
+    height: 100%; */
+}
+#work .icon{
+    width: 4rem;
+    height: 4rem;
+    padding: 35px;
+    color: black;
+    /* margin: 50px; */
+    border: 10px solid white;
+ }
+.content-box h2{
+    font-size: 1.3rem;
+}
+ .an-box {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid var(--main-color);
+    
+} 
+#WORK{
+    background-color: #F5F5F5;
+}
+.box-img{
+    overflow: hidden;
+}
+.box img{
+    transition: all 1s;
+    width: 100%;
+}
+.box:hover img{
+    transform: scale(1.2);
+}
+#clint ,#CONTACT{
+    background-image: url("./imgs/overlay-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg-blog ,.back{
+    background-color: rgba(0, 120, 255, 0.7);
+    height: 100%;
+    width: 100%;
+}
+.cont-blog p{
+    font-size: 20px;
+    line-height:30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    width: 65%;
+    margin: auto;
+    color: white;
+}
+.carousel-indicators [data-bs-target] {
+    width: 0.7em;
+    height: 0.7rem;
+    border-radius: 50%;
+}
+#blog .icon{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50px;
+}
+
+.cont-info{
+    margin-top: 7rem;
+}
+.box-shadow-full{
+    z-index: 2;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+button.styl {
+    border-radius: 50px;
+}
+.no-sty li {
+    list-style: none;
+    line-height: 2;
+}
+ p.prag {
+   font-size: 20px;
+   color: #817e7e;
+   font-weight: 300;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ #CONTACT .icon{
+ width: 3rem;
+ height: 3rem;
+ text-align: center;
+ padding-top: 4px;
+ background-color: rgb(255, 255, 255);
+ color: black;
+ border: 2px solid var(--main-color); 
+ }
+ #CONTACT .item:hover .icon{
+    background-color: var(--main-color);
+    border: 4px solid #CDE1F8;
+    color:white;
+}
+.info h2{
+    position: relative;
+}
+.info h2::after{
+    content: "";
+    width: 20%;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -15px;
+    left: 10%;
+    transform: translateX(-50%);
+}
+#foot{
+    background-color:  var(--main-color);
+}
